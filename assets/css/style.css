@@ -42,6 +42,7 @@ family=Lato -> Títulos, textos
     --fontsize-data-calendar: 36px;
     --fontsize-title-calendar: 19px;
     --fontsize-text-calendar: 15px;
+    --fontsize-text-calendar-smaller: 12px;
     --fontsize-button-calendar: 32px;
     --fontsize-text-contato: 15px;
 
@@ -292,7 +293,7 @@ footer{
     display: flex;
     flex-flow: column wrap;
     border: 1px solid black;
-    width: 35vw;
+    width: 40vw;
     height: 50vh;
     margin-left: 20px;
     margin-top: 50px;
@@ -317,7 +318,7 @@ footer{
 }
 
 .secaoCalendar > ul > li > p {
-    height: 40%;
+    height: 35%;
     text-align:center;
     font-size: var(--fontsize-text-calendar);
     line-height: 25px;
@@ -667,8 +668,13 @@ footer{
         }
 
         .secaoCalendar > ul > li {
-            width: 17vw;
+            width: 25vw;
             margin-top: 20px;
+            font-size: var(--fontsize-text-calendar);
+        }
+
+        .secaoCalendar > ul > li > p {
+            margin-bottom: 20px;
         }
 
         .secaoContato {
@@ -681,7 +687,8 @@ footer{
         }
 
         .secaoContato > .flex > .flex-col > .secaoContato-informacoes {
-            margin-left: 20vw;
+            margin-left: 15vw;
+            margin-bottom: 75px;
         }
 
         .secaoContato > .flex > .flex-col > form {
