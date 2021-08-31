@@ -614,7 +614,7 @@ footer{
             align-items: flex-start;
         }
         .secaoDestaque {
-            background-image: url("/assets/img/background-destaque.webp");
+            background-image: url("../img/background-destaque.webp");
             background-size: cover;
             padding: 10% 10% 15% 10%;
         }
