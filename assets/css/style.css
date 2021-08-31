@@ -42,6 +42,7 @@ family=Lato -> Títulos, textos
     --fontsize-data-calendar: 36px;
     --fontsize-title-calendar: 19px;
     --fontsize-text-calendar: 15px;
+    --fontsize-text-calendar-smaller: 12px;
     --fontsize-button-calendar: 32px;
     --fontsize-text-contato: 15px;
 
@@ -698,6 +699,11 @@ footer{
         .secaoCalendar > ul > li {
             width: 25vw;
             margin-top: 20px;
+            font-size: var(--fontsize-text-calendar);
+        }
+
+        .secaoCalendar > ul > li > p {
+            margin-bottom: 20px;
         }
 
         .secaoContato {
@@ -720,6 +726,7 @@ footer{
 
         .secaoContato > .flex > .flex-colRight{
             width: 50%;
+
         }
 
         .secaoContato > .flex > .flex-col > form {
