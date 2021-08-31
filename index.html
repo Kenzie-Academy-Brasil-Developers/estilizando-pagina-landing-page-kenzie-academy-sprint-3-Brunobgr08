@@ -9,27 +9,33 @@
   <title>Landing Page Kenzie Academy</title>
 </head>
 <body>
-  
+
   <!-- CABEÇALHO -->
   <header class="topo">
 
-    <div class="large-container">
+    <div class="header-container">
+
+      <!-- MENU HAMBURGUER MOBILE -->
+      <label for="menu" class="menuH">
+        <p class="fas fa-bars fa-1x fa-inverse"></p>
+      </label>
+
       <!-- LOGO -->
-      <figure>
-        <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
-        <figcaption>Logo Kenzie Academy</figcaption>  
+      <figure class="header__containerlogo">
+        <img class="header__logo" src="assets/img/logo.svg" alt="Logo Kenzie Academy">
+        <figcaption>Logo Kenzie Academy</figcaption>
       </figure>
 
       <!-- MENU DE NAVEGAÇÃO -->
-      <nav>
-        <ul>
-          <li><a href="#1">Sobre a Kenzie</a></li>
-          <li><a href="#2">Agenda</a></li>
-          <li><a href="#3">Contato</a></li>
+      <nav class="header__nav">
+        <input type="checkbox" id="menu" class="header__menu">
+        <ul class="header__ul">
+          <li class="header__li"><a href="#1">Sobre a Kenzie</a></li>
+          <li class="header__li"><a href="#2">Agenda</a></li>
+          <li class="header__li"><a href="#3">Contato</a></li>
         </ul>
-      </nav>
+        </nav>
     </div>
-
   </header>
 
   <!-- PÁGINA INICIAL -->
@@ -43,8 +49,8 @@
 
       <!-- FORMULÁRIO -->
       <div class="secaoDestaqueFormulario">
-        <input type="email"  placeholder="E-mail" required>
-        <button type="button">Subscribe</button>
+        <input class="secaoDestaqueFormulario__input" type="email"  placeholder="E-mail" required>
+        <button class="secaoDestaqueFormulario__button" type="button">Subscribe</button>
       </div>
 
     </section>
@@ -52,13 +58,13 @@
     <!-- SEÇÃO SOBRE -->
     <section class="secaoSobre">
 
-      <article class="flex">
-        
-        <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+      <article class="container__secaoSobre">
 
-          <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
+        <!-- COLUNA ESQUERDA -->
+        <div class="column__secaoSobre column_python">
+
+          <h2 class="secaoSobre__h2">LOREM IPSUM DOLOR SIT PYTHON</h2>
+          <p class="secaoSobre__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
           </p>
 
           <span>Consectetur adipisicing elit 5 Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam.</span>
@@ -68,40 +74,38 @@
         </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="column__secaoSobre column_python">
 
           <figure>
-            <img src="assets/img/python.png" alt="python">
-            <figcaption>python</figcaption>  
-          </figure>      
+            <img src="assets/img/python.png" alt="python" class="secaoSobre__img--pyth">
+            <figcaption>python</figcaption>
+          </figure>
 
         </div>
 
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="column__secaoSobre  column_javascript--img">
 
             <figure>
-              <img src="assets/img/JavaScript-logo.png" alt="Java Script">
-              <figcaption>Java Script</figcaption>  
-            </figure>      
-  
-          </div>
-
-        <!-- COLUNA DIREITA -->
-        <div class="flex-col">
-
-            <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
-            <ul>
-                <li>The standard Lorem Ipsum passage, used since the 1500s</li>
-                <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
-                <li>Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
-            </ul>
+              <img src="assets/img/JavaScript-logo.png" alt="Java Script" class="secaoSobre__img--js">
+              <figcaption>Java Script</figcaption>
+            </figure>
 
         </div>
 
-        
+         <!-- COLUNA DIREITA -->
+        <div class="column__secaoSobre  column_javascript">
+
+          <h2 class="secaoSobre__h2"> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
+          <ul class="secaoSobre__ul">
+              <li class="secaoSobre__li">The standard Lorem Ipsum passage, used since the 1500s</li>
+              <li class="secaoSobre__li">Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
+              <li class="secaoSobre__li">1914 translation by H. Rackham</li>
+              <li class="secaoSobre__li">Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
+              <li class="secaoSobre__li">1914 translation by H. Rackham</li>
+          </ul>
+
+        </div>
 
       </article>
 
@@ -117,7 +121,7 @@
 
         <!-- LISTA DE CURSOS -->
         <ul>
-        
+
           <li>
             <img src="assets/img/html-css.png" alt="">
             <h3>Html/Css</h3>
@@ -153,7 +157,7 @@
             <h3 style="color:#303030;">Soft Skills</h3>
             <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
-          
+
         </ul>
 
       </article>
@@ -208,11 +212,11 @@
 
         <!-- COLUNA LADO ESQUERDO -->
         <div class="flex-col">
-          
+
           <div class="secaoContato-informacoes">
-          
+
             <p>Contact us and we'll get back to you within 24 hours.</p>
-            
+
             <ul>
               <li><a href="#">Chicago, US</a> </li>
               <li><a href="tel:001515151515">+00 1515151515</a></li>
@@ -225,9 +229,9 @@
 
         <!-- COLUNA LADO DIRETO -->
         <div class="flex-col">
-          
+
           <h2>Contact</h2>
-          
+
           <form action="">
 
             <div class="form-input-model">
@@ -261,6 +265,7 @@
     <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
