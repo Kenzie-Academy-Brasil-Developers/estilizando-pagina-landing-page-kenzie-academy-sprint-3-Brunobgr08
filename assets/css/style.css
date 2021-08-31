@@ -321,10 +321,30 @@ figcaption{
             padding: 1.5%;
             align-items: flex-start;
         }
+        .secaoDestaque {
+            background-image: url("/assets/img/background-destaque.webp");
+            background-size: cover;
+            padding: 10% 10% 15% 10%;
+        }
+        .secaoDestaque p, .secaoDestaqueFormulario{
+            padding: 3% 0 0 0;
+        }
 
     }
 
     @media only screen and (min-width: 1024px) {
+        .secaoDestaque h2{
+            font-size: 63px;
+        }
+        .secaoDestaque p{
+            font-size: 21px;
+        }
+        .secaoDestaqueFormulario__input{
+            font-size: 14px;
+        }
+        .secaoDestaqueFormulario__button {
+            font-size: 14px;
+        }
 
     }
 /* MEDIA QUERIES */
