@@ -2,7 +2,7 @@
 /*
 Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
-Author: Kenzie Academy 
+Author: Kenzie Academy
 Author URI: https://kenzie.com.br/
 Description: Descrção do thema.
 Version: 1.0
@@ -29,16 +29,35 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
-  
+:root{
+
+    /* FONTES */
+    --font-monserrat: 'Montserrat', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --sizefont-linkmenu: 13px;
+    --fontsize-title-sobre: 24px;
+    --fontsize-text-sobre: 19px;
+
+    /* COLORS */
+    --color-white: #FFFFFF;
+    --color-bluelight: #007aff;
+    --color-bluelightTransp: rgba(0,122,255, 0.4);
+    --color-bluedark: #00043e;
+    --color-grey: #303030;
+    --color-greylight: #818181;
+    --color-greyMoreLighter: #f8f8f8;
+}
+
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: var(--font-lato);
     list-style: none;
+    text-decoration: none;
 }
+
 img{
     max-width: 800px;
 }
@@ -61,19 +80,19 @@ div.container{
     margin:0 auto;
 }
 /* GERAL */
-  
+
 /* HTML */
 html{}
 /* HTML */
-  
+
 /* BODY */
 body{}
 /* BODY */
-  
+
 /* HEADER */
 header{}
 /* HEADER */
-  
+
 /* FOOTER */
 footer{}
 /* FOOTER */
@@ -94,10 +113,10 @@ main{}
 ::-webkit-resizer{}
 
 /* EXTRAS */
-  
+
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
-  
+
     @media screen and (min-width: 800px) {}
 /* MEDIA QUERIES */
