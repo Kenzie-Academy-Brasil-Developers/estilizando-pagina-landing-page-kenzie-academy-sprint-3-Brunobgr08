@@ -169,6 +169,94 @@ figcaption{
     }
     /* fim seção destaque */
 
+    /* início seção sobre */
+.container__secaoSobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    }
+    .secaoSobre__h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    line-height: 0.9;
+    font-family: var(--font-monserrat);
+    }
+    .secaoSobre__p{
+    font-size: 15px;
+    padding: 20px 0;
+    text-align: left;
+    line-height: 1.7;
+    color: var(--color-grey);
+    font-family: var(--font-lato);
+    }
+    .container__secaoSobre span{
+    display: block;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--color-greylight);
+    font-family: var(--font-lato);
+    }
+    .container__secaoSobre button{
+    width: 100%;
+    padding: 2% 0;
+    margin: 20px auto 0 auto;
+    border: 1px solid var(--color-greylight);
+    font-size: 14px;
+    color: var(--color-grey);
+    font-family: var(--font-lato);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    }
+
+    .column__secaoSobre{
+    width: 100%;
+    max-width: 100vw;
+    text-align: center;
+    padding: 15px 40px 15px 40px;
+    }
+    .column_python{
+    background-color: var(--color-white);
+    }
+    .column_javascript{
+    background-color: var(--color-greyMoreLighter);
+    padding: 10px 40px 15px 40px;
+    }
+    .column_javascript--img{
+    background-color: var(--color-greyMoreLighter);
+    padding: 40px 40px 0px 40px;
+    }
+    .secaoSobre__img--pyth {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    max-width: 200px;
+    }
+    .secaoSobre__img--js {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    max-width: 120px;
+    }
+
+    .secaoSobre__ul{
+    list-style: outside;
+    text-align: left;
+    padding: 25px 40px 30px 40px;
+    }
+    .secaoSobre__li{
+    font-size: 15px;
+    padding: 5px 0;
+    text-align: left;
+    line-height: 1.7;
+    color: var(--color-greylight);
+    font-family: var(--font-lato);
+    }
+
+    /* fim seção sobre */
+
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
 
