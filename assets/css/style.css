@@ -281,6 +281,46 @@ figcaption{
 
 /* MEDIA QUERIES */
     @media only screen and (min-width: 768px) {
+        .menuH{
+            display: none;
+        }
+        .header__nav{
+            width: 350px;
+        }
+        .header__ul{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+            background-color: transparent;
+            z-index: 1;
+            transition: none;
+            height: 45px;
+            padding: 0px 10px;
+            position: static;
+        }
+        .header__li{
+            padding: 5px 0px;
+            height: 30px;
+            opacity: 70%;
+        }
+        .header__li:hover{
+            opacity: 100%;
+        }
+        .header-container a{
+            color: var(--color-white);
+            font-family: var(--font-lato);
+            font-size: 13px;
+            font-stretch: extra-expanded;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .header-container{
+            justify-content: space-around;
+            padding: 1.5%;
+            align-items: flex-start;
+        }
 
     }
 
