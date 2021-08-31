@@ -329,6 +329,9 @@ figcaption{
         .secaoDestaque p, .secaoDestaqueFormulario{
             padding: 3% 0 0 0;
         }
+        .secaoSobre__p{
+            text-align: center;
+        }
 
     }
 
@@ -350,6 +353,7 @@ figcaption{
         }
         .secaoSobre__p{
             font-size: 19px;
+            text-align: left;
         }
         .container__secaoSobre{
             flex-direction: row;
@@ -376,6 +380,11 @@ figcaption{
         .container__secaoSobre button{
             width: 25%;
             margin: 20px 0 0 0;
+        }
+        .container__secaoSobre button:hover{
+            background-color: #e2e2e2;
+            cursor: pointer;
+            font-weight: 700;
         }
         .column_python{
             text-align: left;
