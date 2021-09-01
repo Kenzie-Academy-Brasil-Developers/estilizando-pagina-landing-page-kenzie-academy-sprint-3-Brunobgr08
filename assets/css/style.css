@@ -692,6 +692,10 @@ footer{
             flex-flow: row wrap;
         }
 
+        .secaoCursos > article > ul > li {
+            margin: 12vh 8vw;
+        }
+
         .secaoCalendar > ul {
             flex-flow: row wrap;
         }
